@@ -531,6 +531,8 @@ GEM
       connection_pool (~> 2.2, >= 2.2.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
+    sidekiq-batch (0.1.4)
+      sidekiq (>= 3)
     sidekiq-debounce (1.1.0)
       sidekiq (>= 2.17)
     sidekiq-scheduler (2.2.1)
@@ -682,6 +684,7 @@ DEPENDENCIES
   sentry-raven
   shoulda-matchers
   sidekiq (~> 5)
+  sidekiq-batch
   sidekiq-debounce
   sidekiq-scheduler
   simplecov
