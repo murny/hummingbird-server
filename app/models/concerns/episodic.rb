@@ -23,6 +23,10 @@ module Episodic
     episodes.where(number: number).first
   end
 
+  def units(range)
+    episodes.where(number: range)
+  end
+
   def default_progress_limit
     # Weekly with a margin
     run_length ? (run_length.to_i / 7) + 5 : 100
